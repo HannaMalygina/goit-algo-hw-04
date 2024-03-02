@@ -8,7 +8,7 @@ def total_salary(path):
         with open (path, "r", encoding = "utf-8") as fh:
             lines = [el for el in fh.readlines()]
     except FileNotFoundError:
-        print ("File {path} was not found")
+        print (f"File {path} was not found")
     for line in lines:
         if line: 
             try:
